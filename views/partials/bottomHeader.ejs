@@ -1,0 +1,21 @@
+<div class="detail-main">
+    <div class="project-title-box">
+        <div class="project-title">Web Developer</div>
+    </div>
+    <div class="detail-box">
+        <div class="d-date">
+            <div class="date"><input type="date"></div>
+        </div>
+        <div class="m-month">
+            <div onmouseover="onMonthdropdown()" class="show-month">สัปดาห์นี้</div>
+
+            <ul class="month-dropdown">
+                <li class="month-list" id="7">สัปดาห์นี้</li>
+                <li class="month-list" id="31">เดือนนี้</li>
+            </ul>
+        </div>
+        <form class="s-search" method="POST" action="/dashboard/search">
+            <input class="search-box" type="search" name="searchTerm" placeholder="ค้นหา">
+        </form>
+    </div>
+</div>

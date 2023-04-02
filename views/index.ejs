@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title></title>
+</head>
+    <body>
+        <div class="detail-app">
+            <div class="logo">LOGO</div>
+            <div class="app-name">App name</div>
+        </div>
+
+        <div class="login-box">
+            <div class="login-title">เข้าสู่ระบบ</div>
+            <form action="./home.html" class="login-form">
+                <input type="text" placeholder="ชื่อผู้ใช้">
+                <input type="text" placeholder="รหัสผ่าน">
+                    <div class="register-forgetpass">
+                        <div class="register">ลงทะเบียน</div>
+                        <div class="middle">|</div>
+                        <div class="forget-password">ลืมรหัสผ่าน?</div>
+                    </div>
+                <button class="login-btn" type="submit" action="/dashboard">ล็อคอิน</button>
+            </form>
+            <div class="or-text">
+                หรือ
+            </div>
+            <div class="other-login">
+                <a href="/auth/google" class="google-login-btn">
+                    <img class="icon-other-login" src="/icons/icons8-google-96.png" alt="">
+                    ลงชื่อเข้าใช้ด้วย google
+                </a>
+            </div>
+        </div>
+
+        <div class="register-box">
+            <button class="register-close-btn">x</button>
+            <div class="register-text">สมัครสมาชิก</div>
+            <form action="#" class="register-form">
+                <div class="register-middle">
+                    <div class="left-side">
+                        <label for="uname" class="username-text">ชื่อผู้ใช้</label>
+                        <label for="pword" class="password-text">รหัสผ่าน</label>
+                        <label for="re-pword" class="re-password-text">ยืนยันรหัสผ่าน</label>
+                        <label for="mail" class="email-text">อีเมล</label>
+                    </div>
+                    <div class="right-side">
+                        <input type="text">
+                        <input type="password">
+                        <input type="password">
+                        <input type="email">
+                    </div>
+                </div>
+                <button class="register-btn" type="submit">ยืนยัน</button>
+            </form>
+        </div>
+
+        <div class="forget-password-box">
+            <button class="forget-close-btn">x</button>
+            <div class="forget-title">ลืมรหัสผ่าน</div>
+            <form action="#" class="forget-form">
+                <div class="forget-input">
+                    <label for="emailtext">อีเมล:</label>
+                    <input type="email">
+                </div>
+                <button type="submit" class="forget-submit">ยืนยัน</button>
+            </form>
+        </div>
+        
+
+
+        <script>
+            const registerBox = document.querySelector(".register-box");
+            const show_register = document.querySelector(".register");
+            const close_register = document.querySelector(".register-close-btn");
+
+            const forgetPasswordBox = document.querySelector(".forget-password-box");
+            const show_forget_password = document.querySelector(".forget-password");
+            const close_forget_password = document.querySelector(".forget-close-btn");
+
+            // Open and Close register
+            function openRegister() {
+                registerBox.classList.add("open-register");
+            }
+
+            function closeRegister() {
+                registerBox.classList.remove("open-register");
+            }
+            
+            show_register.addEventListener("click", openRegister);
+            close_register.addEventListener("click", closeRegister);
+
+            // Open and Close forget password
+            function openForgetpassword() {
+                forgetPasswordBox.classList.add("open-forget-password");
+            }
+
+            function closeForgetpassword() {
+                forgetPasswordBox.classList.remove("open-forget-password");
+            }
+
+            show_forget_password.addEventListener("click", openForgetpassword);
+            close_forget_password.addEventListener("click", closeForgetpassword);
+        
+        
+        </script>
+    </body>
+</html>

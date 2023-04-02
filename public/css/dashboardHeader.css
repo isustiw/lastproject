@@ -1,0 +1,199 @@
+.navbar {
+    border-bottom: 1px solid #545871;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.user {
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.setting {
+    position: relative;
+    left: 90px;
+    bottom: 40px;
+}
+.setting-icon {
+    width: 18px;
+}
+
+.all-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin-left: 90px;
+    margin-top: 60px;
+    /* padding: 10px 5px 10px 5px; */
+}
+.new-task {
+    cursor: pointer;
+    padding: 6px 25px 6px 25px;
+    background: #6b728e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.right-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 150px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.teammate-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.teammate-icon {
+    width: 45px;
+}
+.invite-to-project {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.invite-to-project-btn {
+    width: 50px;
+    background: none;
+    border: none;
+    font-size: 15px;
+}
+.invite-project-btn button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 15px;
+    padding: 4px 10px 4px 10px;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding-left: 50px;
+}
+
+.each-page {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 150px;
+}
+.each-page a {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+
+/* NAVBAR CONTINUE DETAIL */
+.detail-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.project-title-box {
+    width: 700px;
+    padding-left: 50px;
+}
+.project-title {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.detail-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.d-date, .m-month, .s-search {
+    padding-right: 50px;
+}
+.date, .show-month {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+} 
+.date input {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.search-box {
+    background: #454b64;
+    border: none;
+    border-radius: 2px;
+    padding: 3px 3px 3px 6px;
+    color: white;
+}
+
+/* WEEK DROPDOWN */
+.month-dropdown {
+    background: black;
+    box-shadow: 0px 0px 8px #535874;
+    position: absolute;
+    right: 275px;
+    top: 139px;
+    
+    width: 101px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    z-index: 99px;
+    gap: 2px;
+    border-radius: 4px;
+    
+    display: none;
+}
+.month-dropdown li {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.month-dropdown li:hover {
+    background: rgb(37, 35, 35);
+    transition: 0.3s;
+}
+
+.m-month {
+    width: 110px;
+    margin-right: 40px;
+}
+
+/* ACTIVE PAGE */
+a:is(:link, :active, :visited).active-page {
+    border-bottom: 1px solid white;
+}
